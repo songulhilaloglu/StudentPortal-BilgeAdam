@@ -9,9 +9,9 @@ using System.Threading.Tasks;
 
 namespace StudentPortal_DataAccess.SeedData.EntitySeedData
 {
-    public class TeacherSeedData : IEntityTypeConfiguration<TeacherSeedData>
+    public class TeacherSeedData : IEntityTypeConfiguration<Teacher>
     {
-        public void Configure(EntityTypeBuilder<TeacherSeedData> builder)
+        public void Configure(EntityTypeBuilder<Teacher> builder)
         {
             builder.HasData
                 (

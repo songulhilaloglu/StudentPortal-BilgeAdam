@@ -13,6 +13,7 @@ namespace StudentPortal_Core.Entities.Concrete
         {
             Students = new List<Student>();
         }
+
         public byte ClassroomNo {  get; set; }    
         public string? ClassroomName { get; set; }
         public string? ClassroomDescription { get; set;}
@@ -21,7 +22,6 @@ namespace StudentPortal_Core.Entities.Concrete
         public Teacher Teacher { get;set; }
 
         public List<Student> Students { get; set; }
-
 
 
     }

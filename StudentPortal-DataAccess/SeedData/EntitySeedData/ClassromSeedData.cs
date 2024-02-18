@@ -9,9 +9,9 @@ using System.Threading.Tasks;
 
 namespace StudentPortal_DataAccess.SeedData.EntitySeedData
 {
-    public class ClassromSeedData : IEntityTypeConfiguration<ClassromSeedData>
+    public class ClassromSeedData : IEntityTypeConfiguration<Classroom>
     {
-        public void Configure(EntityTypeBuilder<ClassromSeedData> builder)
+        public void Configure(EntityTypeBuilder<Classroom> builder)
         {
             builder.HasData
                 (
@@ -19,7 +19,7 @@ namespace StudentPortal_DataAccess.SeedData.EntitySeedData
                 {
                    Id = 1,
                    ClassroomName = "YZL-8445", 
-                   //ClassroomNo = 10,
+                   ClassroomNo = 10,
                    ClassroomDescription = "320 Saat .NET Full Stack Yazılım Uzmanlığı Eğitimi",
                    TeacherId = 1,
                 }

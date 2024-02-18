@@ -20,7 +20,7 @@ namespace StudentPortal_DataAccess.Context
 
         public AppDbContext(DbContextOptions<AppDbContext> options) : base(options)
         {
-            // benim yerime otomatik update database komutunu çağırır
+            //Sizin yerinize otomatik olarak update-database komutunu çağırır.
             Database.Migrate();
         }
 

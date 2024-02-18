@@ -17,7 +17,7 @@ namespace StudentPortal_Core.Entities.Concrete
         }
 
 
-        // sql e gidecek zorunlu alanlardır
+        // SQL için zorunlu alanları belirliyoruz
         [Required]
         [MaxLength(100)]
         [MinLength(3)]
@@ -27,12 +27,7 @@ namespace StudentPortal_Core.Entities.Concrete
         [MaxLength(200)]
         [MinLength(2)]
         public string LastName { get; set; }
-
-        [Required]
-        [MaxLength(200)]
-        [MinLength(2)]
         public string? Email { get; set; }
-        
         public List<Classroom> Classrooms { get; set; }
 
     }

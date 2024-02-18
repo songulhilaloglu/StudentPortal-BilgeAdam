@@ -12,11 +12,8 @@ namespace StudentPortal_Core.Entities.Concrete
 {
     public class Student : BaseEntity
     {
-       
-
-
-
-        // sql e gidecek zorunlu alanlardır
+      
+        // SQL için zorunlu alanları belirliyoruz
         [Required]
         [MaxLength(100)]
         [MinLength(3)]
@@ -26,13 +23,7 @@ namespace StudentPortal_Core.Entities.Concrete
         [MaxLength(200)]
         [MinLength(2)]
         public string LastName { get; set; }
-
-        [Required]
-        [MaxLength(200)]
-        [MinLength(2)]
         public string? Email { get; set; }
-
-      
         public DateTime BirthDate { get; set; }
 
         public double? Exam1 { get; set; }
@@ -48,12 +39,12 @@ namespace StudentPortal_Core.Entities.Concrete
             } 
         }
 
-        public string ProjectPath { get; set; }
+        public string? ProjectPath { get; set; }
 
-        // features schemas nuget ten indir
+        // Nuget packages : Features indirmeliyiz, 
+        // DataAnnotations.Schema using ihiyacımız bulunuyor
         [NotMapped]
         public IFormFile? Project { get; set; }
-
 
         public int ClassromId { get; set; }
         public Classroom Classroom { get; set; }

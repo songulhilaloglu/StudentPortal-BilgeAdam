@@ -22,3 +22,4 @@ namespace StudentPortal_Core.Entities.Abstract
 
     }
 }
+
